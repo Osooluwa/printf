@@ -8,14 +8,14 @@
 
 int _printf(const char *format, ...)
 {
-        int y = 0;
-        va_lists args;
+	int y = 0;
+	va_lists args;
 
-        if(format == NULL)
-                return (-1);
+	if (format == NULL)
+		return (-1);
 
-        va_start(args, format);
-	
+	va_start(args, format);
+
 	while (*format)
 	{
 		if (*format != '%')
